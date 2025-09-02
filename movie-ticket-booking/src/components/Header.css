@@ -1,0 +1,66 @@
+/* src/components/Header.css */
+
+.header {
+  background: #0b0c10;
+  padding: 15px 30px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between; /* space between logo + nav + buttons */
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #66fcf1;
+  font-size: 1.5rem;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #66fcf1;
+}
+
+.user-actions {
+  display: flex;
+  gap: 12px; /* spacing between Sign In / Sign Up */
+}
+
+.btn-primary {
+  background: #ff4d4d;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #66fcf1;
+  color: #66fcf1;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,285 @@
+/* Signin.css - Centered layout matching your app's theme */
+.signin-page {
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 80px);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-container {
+  background: white;
+  max-width: 420px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.signin-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #5d4e75;
+}
+
+.signin-header h1 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.signin-header p {
+  color: #666;
+  margin: 0;
+  font-size: 16px;
+}
+
+.login-method-selector {
+  display: flex;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 25px;
+}
+
+.method-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.method-btn.active {
+  background: white;
+  color: #5d4e75;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.method-btn:hover {
+  color: #5d4e75;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+  background-color: #fff;
+}
+
+.form-group input:focus {
+  border-color: #5d4e75;
+  box-shadow: 0 0 0 3px rgba(93, 78, 117, 0.1);
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-password:hover {
+  color: #333;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.remember-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+.remember-label input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.forgot-link {
+  color: #5d4e75;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.signin-btn {
+  background-color: #5d4e75;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.signin-btn:hover {
+  background-color: #4a3f63;
+  transform: translateY(-1px);
+}
+
+.divider {
+  text-align: center;
+  margin: 25px 0;
+  position: relative;
+  color: #999;
+  font-size: 14px;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e1e5e9;
+  z-index: 1;
+}
+
+.divider span {
+  background: white;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.social-login {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+  border-color: #bbb;
+  transform: translateY(-1px);
+}
+
+.google-btn:hover {
+  border-color: #4285f4;
+  color: #4285f4;
+}
+
+.facebook-btn:hover {
+  border-color: #1877f2;
+  color: #1877f2;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 15px;
+}
+
+.signup-link a {
+  color: #ff4757;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .signin-page {
+    padding: 20px 15px;
+  }
+  
+  .signin-container {
+    padding: 30px 25px;
+    max-width: 100%;
+  }
+  
+  .signin-header h1 {
+    font-size: 24px;
+  }
+  
+  .social-login {
+    flex-direction: column;
+  }
+}
