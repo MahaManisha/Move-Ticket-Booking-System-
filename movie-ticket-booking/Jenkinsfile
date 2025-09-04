@@ -10,8 +10,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                dir('dict') { // replace 'dict' with your React project folder
-                    // Use direct path to Node.js installed on Windows
+                dir('movie-ticket-booking') { 
                     bat '"C:\\Program Files\\nodejs\\npm.cmd" install'
                 }
             }
@@ -19,7 +18,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                dir('dict') {
+                dir('movie-ticket-booking') {
                     bat '"C:\\Program Files\\nodejs\\npm.cmd" run build'
                 }
             }
